@@ -1,6 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
 * {
   /* reset */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+:root {
+  /* color */
+  --white: #f1f3f5;
+  --lightGrey: #e9ecef;
+  --grey: #212529;
+  /* shadow */
+  /* border */
+  /* whitespace */
+  /* 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+  /* font */
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+  /* 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+  font-weight: 400;
+  line-height: 1;
+  color: var(--grey);
+  /* design */
+  background-color: var(--white);
+}
+
+.home {
+  height: 100vh;
+}
+
+.menu {
+  background-color: var(--lightGrey);
+  width: 100%;
+  height: 4%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li {
+  width: 30rem;
+  list-style: none;
+  text-align: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--grey);
+}
+
+.home-quote {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.intro {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+.introduction {
+  width: 60rem;
+  font-size: 1.6rem;
+  line-height: 3rem;
 }
