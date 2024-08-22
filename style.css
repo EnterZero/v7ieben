@@ -9,12 +9,16 @@
 }
 
 :root {
+  /* space */
   /* 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
   font-size: 62.5%;
   /* 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+  /* color */
   --white: #f1f3f5;
   --grey: #212529;
   --lightGrey: #e9ecef;
+  /* shadow */
+  --shadow: 0 0 3px 0 var(--grey);
 }
 
 body {
@@ -89,7 +93,7 @@ nav a:active {
 
 main,
 section {
-  height: 96vh;
+  min-height: 96vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,10 +111,19 @@ section {
   line-height: 2;
 }
 
-.text-sub {
-  /*  */
-}
-
 .list-fix {
   margin-left: 1.6rem;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 1.2rem;
+  box-shadow: var(--shadow);
+}
+
+.ph {
+  margin-left: 1.2rem;
+  line-height: 2 !important;
 }
