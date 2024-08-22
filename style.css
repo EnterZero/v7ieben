@@ -87,14 +87,15 @@ nav a:active {
   font-weight: 400;
 }
 
-main {
+main,
+section {
   height: 96vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* help classes */
+/* help */
 .text {
   width: 32%;
   height: 80%;
