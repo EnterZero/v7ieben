@@ -20,6 +20,8 @@
   --black: #212529;
   --gray: #e9ecef;
   --white: #f8f9fa;
+  /* shadow */
+  --boxShadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 body {
@@ -93,4 +95,13 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   margin: 1.6rem 0;
+}
+
+.box {
+  padding: 1.2rem;
+  box-shadow: var(--boxShadow);
+}
+
+.list-fix {
+  padding-left: 3.2rem;
 }
