@@ -20,9 +20,18 @@
   --black: #212529;
   --gray: #e9ecef;
   --white: #f8f9fa;
+  --highlight: #845ef7;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  display: none;
 }
 
 body {
+  /* design */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   /* color */
   background-color: var(--white);
   /* font */
@@ -36,6 +45,7 @@ body {
 #home {
   /* width: 100vw; */
   height: 100vh;
+  background: url(./media/winter.jpg) center/cover no-repeat fixed;
 }
 
 /* nav */
@@ -93,4 +103,22 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   margin: 1.6rem 0;
+}
+
+/* about */
+#about a:link {
+  color: var(--highlight);
+  text-decoration: none;
+}
+
+#about a:visited {
+  color: var(--highlight);
+}
+
+#about a:hover {
+  color: var(--highlight);
+}
+
+#about a:active {
+  color: var(--highlight);
 }
