@@ -20,10 +20,10 @@
   --black: #212529;
   --gray: #e9ecef;
   --white: #f8f9fa;
-  --highlight: #845ef7;
+  --highlight: #4dabf7;
 }
 
-/* scrollbar */
+/* design */
 ::-webkit-scrollbar {
   display: none;
 }
@@ -67,23 +67,14 @@ body {
   list-style: none;
 }
 
-#home a:link {
+#home a:link,
+#home a:visited,
+#home a:hover,
+#home a:active {
   color: var(--black);
   font-size: 1.4rem;
   font-weight: 500;
   text-decoration: none;
-}
-
-#home a:visited {
-  color: var(--black);
-}
-
-#home a:hover {
-  color: var(--black);
-}
-
-#home a:active {
-  color: var(--black);
 }
 
 /* main */
@@ -106,19 +97,32 @@ body {
 }
 
 /* about */
-#about a:link {
+#about a:link,
+#about a:visited,
+#about a:hover,
+#about a:active {
   color: var(--highlight);
   text-decoration: none;
 }
 
-#about a:visited {
+/* contact */
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card a:link i,
+.card a:visited i,
+.card a:active i {
+  color: var(--black);
+}
+
+.card a:hover i {
   color: var(--highlight);
 }
 
-#about a:hover {
-  color: var(--highlight);
-}
-
-#about a:active {
-  color: var(--highlight);
+/* ph */
+.ph {
+  font-size: 3.2rem;
 }
